@@ -1,0 +1,44 @@
+.footer {
+    background-color: #23232e;
+    width: auto;
+    padding: 1.5%;
+}
+
+.footer p {
+    margin: auto;
+    padding: 0.7rem;
+    font-size: 0.8rem;
+}
+
+.clock {
+    color: #898989;
+}
+
+.clock:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url('../img/clock.png');
+    background-repeat: no-repeat;
+    padding-left: 5px;
+}
+
+.footer-2 {
+    width: auto;
+    background-color: #23232e;
+    color: #c1c1c1;
+    height: auto;
+}
+
+.footer-2 p {
+    margin: auto;
+    width: 80%;
+    padding: 0.7rem;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.footer a {
+    color: var(--cor-secundaria);
+}

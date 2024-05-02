@@ -3,6 +3,11 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/about.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
@@ -17,31 +22,29 @@
 </head>
 
 <body>
-    <header>
+    <header class="header" id="header">
         <nav>
-            <a hidden tabindex="-1">Portfólio eL'Fills Vision</a>
             <a tabindex="0" class="logo" href="/">eL Fill</a>
-            <div class="mobile-menu">
+            <div tabindex="1" aria-label="menu" class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="/portfólio.html" rel="next">Portfólio</a></li>
-                <li><a href="/sobre.html">Sobre</a></li>
-                <li><a href="/contatos.html">Contatos</a></li>
-                <li><a href="/loja.html">Loja</a></li>
+                <li><a tabindex="2" href="index.html">Início</a></li>
+                <li><a tabindex="3" href="/portfólio.html" rel="next">Portfólio</a></li>
+                <li><a tabindex="4" href="/sobre.html">Sobre</a></li>
+                <li><a tabindex="5" href="/contatos.html">Contatos</a></li>
+                <li><a tabindex="6" href="/loja.html">Loja</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="line4">
-        </div>
+        <div class="line4"></div>
         <picture class="banner">
             <source media="(max-width:520px)" srcset="./assets/img/banner4-v1.jpg ">
-            <img id="logo_branca" tittle="logo" src="./assets/img/banner4.png"
+            <img tabindex="7" id="logo_branca" tittle="logo" src="./assets/img/banner4.png"
                 alt="Logo da el Fill: um L maiúsculo a esquerda e um f minúsculo deitado em cima, simbolizando uma câmera. Ao centro um círculo com outro dentro, simbolizando a lente da câmera.">
         </picture>
 
@@ -53,13 +56,16 @@
 
     <footer>
         <div class="footer">
-            <p class="clock">08-NOV-23<br>Última atualização do site.</p>
+            <p tabindex="8" class="clock">03-MAI-24<br>Última atualização do site.</p>
         </div>
 
         <div class="footer-2">
-            <p> © Todos os direitos reservados. Por @lfills.vision </p>
+            <p tabindex="9"> © Todos os direitos reservados. Por <a aria-label="instagram Desenvolvedor"
+                    href="https://www.instagram.com/lfills.vision/" rel="external" target="_blank">@lfills.vision</a>
+            </p>
         </div>
     </footer>
+
     <script type="text/javascript" src="./assets/js/script.js"></script>
 
 </body>
